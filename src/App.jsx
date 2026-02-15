@@ -1,14 +1,16 @@
 import { Routes, Route } from "react-router-dom"
 import Login from "./pages/Login"
-import Register from "./pages/Register"
-import ForgotPassword from "./pages/ForgotPassword"
+import UserMenu from "./pages/UsuarioMenu"
+import ProveedorMenu from "./pages/ProveedorMenu"
+import AdminMenu from "./pages/AdminMenu"
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/forgot" element={<ForgotPassword />} />
+      <Route path="/user" element={<UserMenu />} />
+      <Route path="/proveedor" element={<ProveedorMenu />} />
+      <Route path="/admin" element={<AdminMenu />} />
     </Routes>
   )
 }
